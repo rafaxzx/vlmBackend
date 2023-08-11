@@ -26,7 +26,7 @@ module.exports = {
       equipSectorId: {
         type: Sequelize.INTEGER,
         allowNull: false,
-        references: { model: "equipSector", key: "id" },
+        references: { model: "equipSectors", key: "id" },
         onUpdate: "CASCADE",
         onDelete: "CASCADE",
       },
