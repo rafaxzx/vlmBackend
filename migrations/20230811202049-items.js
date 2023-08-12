@@ -61,6 +61,12 @@ module.exports = {
         type: Sequelize.BLOB,
         allowNull: true,
       },
+      createdAt: {
+        type: Sequelize.DATE,
+      },
+      updatedAt: {
+        type: Sequelize.DATE,
+      },
     });
   },
 
