@@ -10,7 +10,7 @@ const EquipSectorController = require("../controllers/EquipSectorController");
 routes.post("/manufacturers", ManufacturerController.store);
 routes.get("/manufacturers", ManufacturerController.findAll);
 routes.put("/manufacturers/:id", ManufacturerController.put);
-routes.delete("/manufacturer/:id", ManufacturerController.destroy);
+routes.delete("/manufacturers/:id", ManufacturerController.destroy);
 
 //Routes for table equipSectors C.R.U.D.
 routes.post("/equipSectors", EquipSectorController.store);
