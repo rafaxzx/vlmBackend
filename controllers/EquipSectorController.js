@@ -21,10 +21,7 @@ module.exports = {
   //Update one specific equipSector
   async put(req, res) {
     const { equipSector } = req.body;
-    await EquipSector.update(
-      { equipSector },
-      { where: { id: req.params.equipSector } }
-    );
+    await EquipSector.update({ equipSector }, { where: { id: req.params.id } });
     return res.send("Update with success.");
   },
   //Delete an equipSector

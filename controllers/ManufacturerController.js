@@ -25,6 +25,7 @@ module.exports = {
   async put(req, res) {
     const { name, logo } = req.body;
     await Manufacturer.update({ name, logo }, { where: { id: req.params.id } });
+
     return res.send("Update with success.");
   },
   //Delete a manufacturer
