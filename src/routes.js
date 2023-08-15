@@ -15,7 +15,7 @@ routes.delete("/manufacturer/:id", ManufacturerController.destroy);
 //Routes for table equipSectors C.R.U.D.
 routes.post("/equipSectors", EquipSectorController.store);
 routes.get("/equipSectors", EquipSectorController.findAll);
-routes.putt("/equipSectors/:id", EquipSectorController.put);
+routes.put("/equipSectors/:id", EquipSectorController.put);
 routes.delete("/equipSectors/:id", EquipSectorController.destroy);
 
 module.exports = routes;
